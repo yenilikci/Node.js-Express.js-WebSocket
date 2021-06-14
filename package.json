@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/yenilikci/Node.js-Express.js-WebSocket#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "socket.io": "^4.1.2"
   }
 }
