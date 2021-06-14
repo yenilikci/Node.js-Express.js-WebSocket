@@ -1,24 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"/>
     <script src="https://cdn.socket.io/4.0.1/socket.io.js"></script>
-</head>
-<body>
-    <h1>Socket IO</h1>
-    <div id="websocket-chart">
-        <h2>Chat</h2>
-        <div id="chat-window">
-            <div id="output"></div>
-            <div id="feedback"></div>
+  </head>
+  <body>
+    <div class="container p-5">
+      <div class="card">
+        <div class="card-header">
+          <h1 class="text-center">Socket IO</h1>
         </div>
-        <input id="handle" type="text" placeholder="Kullanıcı Ad">
-        <input id="message" type="text" placeholder="Mesaj">
-        <button id="send">Gönder</button>
+        <div class="card-body">
+          <h2 class="text-center text-primary">Chat Panel</h2> <hr />
+          <div id="chat-window">
+            <div class="lead" id="output"></div>
+            <div id="feedback"></div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div id="websocket-chart">
+            <input class="form-control my-2" id="handle" type="text" placeholder="Kullanıcı Adınız"/>
+            <input class="form-control my-2" id="message" type="text" placeholder="Mesaj"/>
+            <button class="btn btn-lg bg-success text-white" id="send">Gönder</button>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="./chat.js"></script>
-</body>
+  </body>
 </html>
